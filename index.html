@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Parser & Compiler</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery-2.1.3.min.js"></script>
+</head>
+
+<body>
+
+	<!-- Page Content -->
+	
+
+		<!-- Page Heading -->
+		<div class="row headings" style="height: 150px;" >
+			<div class="col-lg-10 col-lg-offset-1">
+				<center>
+				<h1 class="page-header"><b>JavaScript Parser & Compiler</b><br></h1>
+			</div>
+		</div>
+		<!-- /.row -->
+
+
+		<!-- Projects Row -->
+
+	<div class="container" style="margin-bottom:20px;">	
+		<div class="row" style="margin-top: 20px; margin-bottom: 30px;">
+			<div class="col-md-4">
+				<h3><b>Input Code</b></h3>
+				<textarea name="" id="text" cols="30" rows="10" class="form-control"></textarea>
+			</div>
+			<div class="col-md-4 text-center" style="margin-top:100px">
+				<button id="run" class="btn btn-primary" style="width: 200px;"><b>COMPILE & RUN</b></button><br><br>
+				<button id="com" class="btn btn-success" style="width: 200px;"><b>COMPILE</b></button>
+			</div>
+			<div class="col-md-4">
+				<h3><b>Output JavaScript</b></h3>
+				<textarea name="" id="out" cols="80" rows="10" class="form-control"></textarea>
+			</div>
+			
+		</div>
+	</div>	
+		<div class="row headings">
+			<center>
+				<h1 class="page-header col-lg-10 col-lg-offset-1"><b>Symbol Table</b><br></h1>
+			</center>
+		</div>
+
+	<div class="container" style="margin-bottom:20px;">
+		<div class="row" style="margin-top: 50px;">
+		<div class="col-md-4"> 
+			<h3><b>Lexemes</b></h3>
+			<textarea name="" id="lex" cols="80" rows="10" class="form-control"></textarea>
+		</div>
+
+		<div class="col-md-4" > 
+			<h3><b>Tokens</b></h3>
+			<textarea name="" id="tok" cols="80" rows="10" class="form-control"></textarea>
+		</div>
+		<div class="col-md-4">
+			<h3><b>Symbol Table</b></h3>
+				<table class="table table-dark">
+					<thead>
+					  <tr>
+						<th scope="col">Token</th>
+						<th scope="col">Lexemes</th>
+	
+					  </tr>
+					</thead>
+					<tbody id="data">
+						
+			
+					</tbody>
+				  </table>
+		</div>
+	</div>
+	</div>
+	<script src="js/script.js">
+	</script>
+
+	<style>
+		h3{ 
+			font-family: Century Gothic;
+		}
+		h1{ 
+			font-family: Century Gothic;
+		}
+
+		.headings{
+			background-color: rgb(48, 78, 95);
+			border: 1px;
+			color: white;
+		}
+	</style>
+</body>
+
+</html>
